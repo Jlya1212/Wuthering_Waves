@@ -19,7 +19,7 @@
 
     .card {
       width: 350px; 
-      height: 650px; /* Increased height to ensure the link fits */
+      height: 650px; 
       position: relative;
       display: flex;
       flex-direction: column;
@@ -98,10 +98,10 @@
       border: 1px solid #ffffff;
       transition: 0.5s ease;
       user-select: none;
-      width: 48%; /* Adjust button width to 48% to fit on the same line */
+      width: 48%; 
     }
 
-    button:hover,
+    
     button:focus {
       color: #ffffff;
       background: #008cff;
@@ -111,8 +111,7 @@
         0 0 100px #008cff;
     }
 
-    #btn:hover,
-    :focus {
+    #btn:focus {
       color: #ffffff;
       background: #008cff;
       border: 1px solid #008cff;
@@ -120,6 +119,15 @@
       box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
         0 0 100px #008cff;
     }
+
+    button:active {
+    letter-spacing: 3px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+     }
+
 
     .forgot-password {
       margin-top: 15px;
@@ -131,7 +139,7 @@
     .forgot-password a {
       color: #008cff;
       text-decoration: underline;
-      transition: none; /* Removes the hover effect */
+      transition: none; 
     }
 
   </style>
